@@ -2,13 +2,17 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorator="basicLayout">
+
     <th:block layout:fragment="css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" th:href="@{/css/common.css}">          <!--@는 주소 적을때-->
     </th:block>
+
     <th:block layout:fragment="js">
     </th:block>
+
     <th:block layout:fragment="content">
         <div>home</div>
     </th:block>
-</html>
-</body>
+
 </html>
